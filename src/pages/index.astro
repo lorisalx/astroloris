@@ -13,9 +13,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Hello, my name is Loris!</h1>
+			<p class="bubble">Right now looking for an internship summer 2023!</p>
+			<div class="flex">
+				<div>
+					<p class="flextext">Loris ALEXANDRE</p>
+					<p class="flextext2">French dev working at Boursorama</p>
+				</div>
+				<img class="pp" src="linkedin_pp.png">
+			</div>
+			<p class="category">Work</p>
 			<p>
-				I am a french software engineer apprentice. 
+				Lorem ipsum sir doralament.
 			</p>
 			<p>
 				I'm currently studying at Telecom Nancy.
@@ -30,3 +38,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.category {
+		border-bottom: solid white;
+		font-family: 'Fredoka One';
+		font-size: large;
+	}
+
+	.flextext {
+		font-size: x-large;
+		font-weight: bold;
+	}
+	.flextext2 {
+		font-size: large;
+		font-style: italic;
+	}
+	.pp {
+		border-color: #FEFAE0;
+		border-radius: 50%;
+		border: solid 0.05em;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.bubble {
+		background-color: #40667D;
+		border-radius: 0.5em;
+		color: white;
+		font-size: x-large;
+		font-weight: bold;
+		padding: 0.2em;
+		text-align: center;
+	}
+</style>
